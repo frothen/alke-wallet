@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingresar | Alke Wallet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="login-page">
+  <main class="container min-vh-100 d-flex align-items-center justify-content-center py-5">
+    <div class="card login-card shadow-lg border-0 w-100">
+      <div class="card-body p-4 p-md-5">
+        <div class="brand-mark mb-3">A<span>W</span></div>
+        <p class="eyebrow mb-1">TU BILLETERA DIGITAL</p>
+        <h1 class="h2 fw-bold mb-2">Bienvenida/o a Alke Wallet</h1>
+        <p class="text-secondary mb-4">Administra tu dinero de forma simple. Esta es una demostración educativa.</p>
+        <div id="login-alert" class="alert alert-danger d-none" role="alert"></div>
+        <form id="login-form" novalidate>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control form-control-lg" id="email" placeholder="demo@alkewallet.cl" required autocomplete="username">
+            <div class="invalid-feedback">Ingresa un correo válido.</div>
+          </div>
+          <div class="mb-4">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control form-control-lg" id="password" placeholder="Mínimo 4 caracteres" required minlength="4" autocomplete="current-password">
+            <div class="invalid-feedback">Ingresa al menos 4 caracteres.</div>
+          </div>
+          <button class="btn btn-primary btn-lg w-100" type="submit">Ingresar <span aria-hidden="true">→</span></button>
+        </form>
+        <div class="demo-hint mt-4"><strong>Acceso de prueba:</strong> demo@alkewallet.cl / wallet123</div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
